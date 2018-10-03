@@ -1,3 +1,6 @@
 
-/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "8AB-sT-plu"; */
-"8AB-sT-plu.normalTitle" = "Button";
+/* Class = "UIButton"; normalTitle = "login"; ObjectID = "8AB-sT-plu"; */
+"8AB-sT-plu.normalTitle" = "login";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "bvg-JA-0Yw"; */
+"bvg-JA-0Yw.text" = "Label";

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Dakken
+
+  Created by Sayed Abdo on 10/3/18.
+  Copyright © 2018 sayedAbdo. All rights reserved.
+*/
+"log in" = "دخول";
+"Error" = "خطأ!!";
+"email" = "الاميل غير صحيح🙁";
+"Try Again" = "اعاده المحاوله";
+"password" = "برجاء ادخال الرقم السرى☹️";

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16012EF42164D80000094A73 /* localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16012EF32164D80000094A73 /* localizable.strings */; };
+		16012EFE2164E14A00094A73 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16012F002164E14A00094A73 /* Localizable.strings */; };
 		1620F6CF2164C36A00BB4FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1620F6CE2164C36A00BB4FD4 /* AppDelegate.swift */; };
 		1620F6D12164C36A00BB4FD4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1620F6D02164C36A00BB4FD4 /* LoginVC.swift */; };
 		1620F6D42164C36A00BB4FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1620F6D22164C36A00BB4FD4 /* Main.storyboard */; };
@@ -20,11 +20,12 @@
 
 /* Begin PBXFileReference section */
 		0B96575EF36DB0C96904E0AF /* Pods_Dakken.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dakken.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		16012EED2164D70400094A73 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
-		16012EEE2164D70400094A73 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		16012EF02164D75D00094A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		16012EF22164D76100094A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		16012EF32164D80000094A73 /* localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = localizable.strings; sourceTree = "<group>"; };
+		16012EFA2164E0EF00094A73 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		16012EFB2164E0F000094A73 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		16012EFF2164E14A00094A73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		16012F012164E14C00094A73 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1620F6CB2164C36A00BB4FD4 /* Dakken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dakken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1620F6CE2164C36A00BB4FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1620F6D02164C36A00BB4FD4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -50,10 +51,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160E67CD2164EB9A00129187 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				16012F002164E14A00094A73 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		160E67CE2164EFCD00129187 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				16CD7B142164C5ED00D1B080 /* Help.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		1620F6C22164C36900BB4FD4 = {
 			isa = PBXGroup;
 			children = (
-				16012EF32164D80000094A73 /* localizable.strings */,
 				1620F6CD2164C36A00BB4FD4 /* Dakken */,
 				1620F6CC2164C36A00BB4FD4 /* Products */,
 				C7F6A5A49381A3F9FE40625E /* Pods */,
@@ -72,6 +88,8 @@
 		1620F6CD2164C36A00BB4FD4 /* Dakken */ = {
 			isa = PBXGroup;
 			children = (
+				160E67CE2164EFCD00129187 /* Helper */,
+				160E67CD2164EB9A00129187 /* Localization */,
 				1620F6E22164C3C400BB4FD4 /* Controller */,
 				1620F6E12164C3BB00BB4FD4 /* View */,
 				1620F6E02164C3B200BB4FD4 /* Model */,
@@ -80,7 +98,6 @@
 				1620F6D52164C36A00BB4FD4 /* Assets.xcassets */,
 				1620F6D72164C36A00BB4FD4 /* LaunchScreen.storyboard */,
 				1620F6DA2164C36A00BB4FD4 /* Info.plist */,
-				16CD7B142164C5ED00D1B080 /* Help.swift */,
 			);
 			path = Dakken;
 			sourceTree = "<group>";
@@ -170,6 +187,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 1620F6C22164C36900BB4FD4;
 			productRefGroup = 1620F6CC2164C36A00BB4FD4 /* Products */;
@@ -187,7 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1620F6D92164C36A00BB4FD4 /* LaunchScreen.storyboard in Resources */,
-				16012EF42164D80000094A73 /* localizable.strings in Resources */,
+				16012EFE2164E14A00094A73 /* Localizable.strings in Resources */,
 				1620F6D62164C36A00BB4FD4 /* Assets.xcassets in Resources */,
 				1620F6D42164C36A00BB4FD4 /* Main.storyboard in Resources */,
 			);
@@ -251,12 +269,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		16012F002164E14A00094A73 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16012EFF2164E14A00094A73 /* en */,
+				16012F012164E14C00094A73 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1620F6D22164C36A00BB4FD4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1620F6D32164C36A00BB4FD4 /* Base */,
-				16012EED2164D70400094A73 /* ar */,
 				16012EF02164D75D00094A73 /* en */,
+				16012EFA2164E0EF00094A73 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -265,8 +292,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				1620F6D82164C36A00BB4FD4 /* Base */,
-				16012EEE2164D70400094A73 /* ar */,
 				16012EF22164D76100094A73 /* en */,
+				16012EFB2164E0F000094A73 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -388,11 +415,14 @@
 			baseConfigurationReference = 53828C5217691924E65ABE32 /* Pods-Dakken.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Dakken/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sayed.abdo.Dakken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,11 +433,14 @@
 			baseConfigurationReference = B35A9F32EBDA2824AF508F85 /* Pods-Dakken.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Dakken/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sayed.abdo.Dakken;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
